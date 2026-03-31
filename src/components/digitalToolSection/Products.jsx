@@ -1,4 +1,5 @@
 import React, { use } from 'react';
+import AllProducts from './allProducts/AllProducts';
 
 const Products = ({productPromise}) => {
     const products = use(productPromise);
@@ -10,15 +11,15 @@ const Products = ({productPromise}) => {
                     <h1 className='text-2xl md:text-4xl font-bold text-[#001931]'>Premium Digital Tools</h1>
                     <p className='text-[16px] text-[#627382]'>Choose from our curated collection of premium digital products designedto boost your productivity and creativity.</p>
                 </div>
-                <div className='flex items-center gap-3'>
-                    <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full text-white">Products</button>
-                    <button className='btn  rounded-full flex items-center gap-2 gradient-text'>
+                <div className='flex items-center'>
+                    <button className="btn rounded-r-none  bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full text-white">Products</button>
+                    <button className='btn rounded-l-none  rounded-full flex items-center gap-2 gradient-text'>
                         Cart
                     </button>
                 </div>
             </div>
-            <div>
-                
+            <div className='my-10'>
+                <AllProducts products={products}></AllProducts>
             </div>
         </div>
     );
