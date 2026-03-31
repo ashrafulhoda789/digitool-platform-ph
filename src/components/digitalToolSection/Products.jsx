@@ -1,9 +1,12 @@
-import React, { use } from 'react';
+import React, { use, useState } from 'react';
 import AllProducts from './allProducts/AllProducts';
 
-const Products = ({productPromise}) => {
+const Products = ({ productPromise, selectedProduct, setSelectedProduct }) => {
     const products = use(productPromise);
     // console.log(products);
+
+    const [toggle, setToggle] = useState("products");
+    
     return (
         <div className='w-11/12 mx-auto my-10'>
             <div className='flex flex-col justify-center items-center space-y-5'>
@@ -12,14 +15,20 @@ const Products = ({productPromise}) => {
                     <p className='text-[16px] text-[#627382]'>Choose from our curated collection of premium digital products designedto boost your productivity and creativity.</p>
                 </div>
                 <div className='flex items-center'>
-                    <button className="btn rounded-r-none  bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full text-white">Products</button>
-                    <button className='btn rounded-l-none  rounded-full flex items-center gap-2 gradient-text'>
-                        Cart
+                    <button
+                        onClick={() => setToggle("products")}
+                        className={`btn rounded-r-none ${toggle === "products" ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white" : "gradient-text"}  rounded-l-full `}>Products</button>
+                    <button
+                        onClick={() => setToggle("carts")}
+                        className={`btn rounded-l-none ${toggle === "carts" ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white" : "gradient-text"} rounded-r-full`}>
+                        Cart({selectedProduct.length})
                     </button>
                 </div>
             </div>
             <div className='my-10'>
-                <AllProducts products={products}></AllProducts>
+                <AllProducts
+                    selectedProduct={selectedProduct} setSelectedProduct={setSelectedProduct}
+                    products={products}></AllProducts>
             </div>
         </div>
     );

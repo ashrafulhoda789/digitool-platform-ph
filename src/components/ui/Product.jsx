@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ProductFeature from './ProductFeature';
 
-const Product = ({product}) => {
+const Product = ({product, selectedProduct, setSelectedProduct}) => {
     console.log(product);
-    const {name, description, price, period, features, tag} = product
+    const {name, description, price, period, features, tag} = product;
+
+    const [isbuy, setIsBuy] = useState(false);
+
+    const handleCartItem = () =>{
+
+
+
+        setIsBuy(true);
+
+        setSelectedProduct([...selectedProduct, product]);
+    }
+
     return (
         <div>
             <div className="card bg-base-100 shadow-sm">
@@ -22,7 +34,11 @@ const Product = ({product}) => {
                         }
                     </div>
                     <div className="mt-6">
-                        <button className="btn btn-block bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full text-white">Buy Now</button>
+                        <button 
+                        onClick={() => handleCartItem()}
+                        className={`btn btn-block rounded-full ${isbuy ? "bg-green-400 text-black" : " bg-linear-to-r from-[#4F39F6] to-[#9514FA]  text-white"}`}>
+                            {isbuy ? "Added To Card" : "Buy Now"}
+                        </button>
                     </div>
                 </div>
             </div>
