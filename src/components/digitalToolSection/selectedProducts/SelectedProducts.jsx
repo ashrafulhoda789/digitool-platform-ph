@@ -8,6 +8,12 @@ const SelectedProducts = ({ selectedProduct, setSelectedProduct}) => {
 
     const handleProceedBtn = () =>{
         setSelectedProduct([]);
+    };
+
+    const handleDeleteItem = (selectProduct) =>{
+        const filteredItem = selectedProduct.filter(selectedItem => selectedItem.name !== selectProduct.name);
+
+        setSelectedProduct(filteredItem);
     }
 
     return (
@@ -24,6 +30,7 @@ const SelectedProducts = ({ selectedProduct, setSelectedProduct}) => {
                         </div>
                         : 
                         selectedProduct.map(cartProduct => <CartProducts cartProduct={cartProduct}
+                            handleDeleteItem={handleDeleteItem}
                         ></CartProducts>)
                 }
             </div>

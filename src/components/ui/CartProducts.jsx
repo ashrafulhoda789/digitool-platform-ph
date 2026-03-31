@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CartProducts = ({ cartProduct }) => {
+const CartProducts = ({ cartProduct, handleDeleteItem }) => {
     console.log(cartProduct);
     const { name, price, icon } = cartProduct;
     return (
@@ -15,7 +15,9 @@ const CartProducts = ({ cartProduct }) => {
                 </div>
             </div>
             <div>
-                <p className=' btn bg-white border-none text-red-700'>Remove</p>
+                <p 
+                onClick={()=> handleDeleteItem(cartProduct)}
+                className=' btn bg-white border-none text-red-700'>Remove</p>
             </div>
 
         </div>
