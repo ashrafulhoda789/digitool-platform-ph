@@ -4,6 +4,7 @@ import Banner from './components/banner/Banner'
 import Products from './components/digitalToolSection/Products'
 import Navbar from './components/navbar/Navbar'
 import Rating from './components/ratingSection/Rating'
+import { ToastContainer } from 'react-toastify'
 
 const productFetch = async() =>{
   const res = await fetch('/data.json');
@@ -32,6 +33,7 @@ function App() {
         </Suspense>
       </main>
       
+      <ToastContainer></ToastContainer>
       
     </>
   )

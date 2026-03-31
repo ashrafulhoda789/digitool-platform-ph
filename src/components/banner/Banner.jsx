@@ -5,7 +5,7 @@ import bannerImg from '../../assets/banner.png'
 
 const Banner = () => {
     return (
-        <div className='w-11/12 mx-auto flex flex-col-reverse md:flex-row items-center justify-center gap-10 my-10'>
+        <div className='w-11/12 mx-auto flex flex-col-reverse md:flex-row items-center justify-center gap-10 my-20'>
             <div className='space-y-5 max-w-160'>
                 <div className='flex gap-2 items-center bg-[#E1E7FF] px-3  rounded-full w-fit'>
                     <div> <img src={dotIcon} alt=" " /></div>

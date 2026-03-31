@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CartProducts = ({ cartProduct, handleDeleteItem }) => {
-    console.log(cartProduct);
+    // console.log(cartProduct);
     const { name, price, icon } = cartProduct;
     return (
         <div className='flex justify-between items-center rounded-2xl shadow p-5 border border-gray-200 mb-5'>
