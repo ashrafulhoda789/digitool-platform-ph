@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Basic Plan",
+    "description": "Perfect for individuals getting started.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "1 User",
+      "Basic Support",
+      "Access to core features"
+    ],
+    "icon": "FaUser"
+  },
+  {
+    "id": 2,
+    "name": "Standard Plan",
+    "description": "Ideal for small teams and startups.",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "5 Users",
+      "Priority Support",
+      "Advanced analytics"
+    ],
+    "icon": "FaUsers"
+  },
+  {
+    "id": 3,
+    "name": "Premium Plan",
+    "description": "Best for growing businesses.",
+    "price": 49.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best",
+    "features": [
+      "Unlimited Users",
+      "24/7 Support",
+      "Full feature access"
+    ],
+    "icon": "FaCrown"
+  },
+  {
+    "id": 4,
+    "name": "Starter Pack",
+    "description": "One-time purchase for beginners.",
+    "price": 29.99,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Single License",
+      "Basic Features",
+      "Email Support"
+    ],
+    "icon": "FaRocket"
+  },
+  {
+    "id": 5,
+    "name": "Business Plan",
+    "description": "Complete solution for enterprises.",
+    "price": 199.99,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Unlimited Users",
+      "Dedicated Manager",
+      "Custom integrations"
+    ],
+    "icon": "FaBuilding"
+  },
+  {
+    "id": 6,
+    "name": "Pro Annual",
+    "description": "Save more with yearly billing.",
+    "price": 149.99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best",
+    "features": [
+      "Unlimited Projects",
+      "Priority Support",
+      "Advanced tools"
+    ],
+    "icon": "FaStar"
+  },
+  {
+    "id": 7,
+    "name": "Team Plan",
+    "description": "Designed for collaborative teams.",
+    "price": 39.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "10 Users",
+      "Team dashboard",
+      "Shared workspace"
+    ],
+    "icon": "FaUsersCog"
+  },
+  {
+    "id": 8,
+    "name": "Enterprise Suite",
+    "description": "High-end solution for large organizations.",
+    "price": 499.99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best",
+    "features": [
+      "Unlimited Everything",
+      "Dedicated Support",
+      "Custom API access"
+    ],
+    "icon": "FaBriefcase"
+  }
+]
