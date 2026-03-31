@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import ProductFeature from './ProductFeature';
 
-const Product = ({product, selectedProduct, setSelectedProduct}) => {
-    console.log(product);
-    const {name, description, price, period, features, tag} = product;
+const Product = ({ product, selectedProduct, setSelectedProduct }) => {
+    // console.log(product);
+    const { name, description, price, period, features, tag, icon } = product;
 
     const [isbuy, setIsBuy] = useState(false);
 
-    const handleCartItem = () =>{
+    const handleCartItem = () => {
 
 
 
@@ -20,7 +20,12 @@ const Product = ({product, selectedProduct, setSelectedProduct}) => {
         <div>
             <div className="card bg-base-100 shadow-sm">
                 <div className="card-body">
-                    <span className="badge badge-xs badge-warning">{tag}</span>
+                    <div className='flex justify-between items-center'>
+                        <div className='w-fit  p-2 rounded-full shadow'>
+                            <img width={25} className='' src={icon} alt="" />
+                        </div>
+                        <span className="badge badge-sm badge-warning">{tag}</span>
+                    </div>
                     <div className="">
                         <h2 className="text-3xl font-bold">{name}</h2>
                         <p>{description}</p>
@@ -34,9 +39,9 @@ const Product = ({product, selectedProduct, setSelectedProduct}) => {
                         }
                     </div>
                     <div className="mt-6">
-                        <button 
-                        onClick={() => handleCartItem()}
-                        className={`btn btn-block rounded-full ${isbuy ? "bg-green-400 text-black" : " bg-linear-to-r from-[#4F39F6] to-[#9514FA]  text-white"}`}>
+                        <button
+                            onClick={() => handleCartItem()}
+                            className={`btn btn-block rounded-full ${isbuy ? "bg-green-400 text-black" : " bg-linear-to-r from-[#4F39F6] to-[#9514FA]  text-white"}`}>
                             {isbuy ? "Added To Card" : "Buy Now"}
                         </button>
                     </div>

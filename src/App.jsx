@@ -10,9 +10,10 @@ const productFetch = async() =>{
   return res.json();
 }
 
+const productPromise = productFetch();
+
 function App() {
 
-  const productPromise = productFetch();
   const [selectedProduct, setSelectedProduct] = useState([]);
 
   return (

@@ -12,7 +12,7 @@
       "Basic Support",
       "Access to core features"
     ],
-    "icon": "FaUser"
+    "icon": "https://i.ibb.co.com/b5CDNkyp/design-tool.png"
   },
   {
     "id": 2,
@@ -27,7 +27,7 @@
       "Priority Support",
       "Advanced analytics"
     ],
-    "icon": "FaUsers"
+    "icon": "https://i.ibb.co.com/jP8NTmgS/operation.png"
   },
   {
     "id": 3,
@@ -42,7 +42,7 @@
       "24/7 Support",
       "Full feature access"
     ],
-    "icon": "FaCrown"
+    "icon": "https://i.ibb.co.com/fdwt2dLf/portfolio.png"
   },
   {
     "id": 4,
@@ -57,7 +57,7 @@
       "Basic Features",
       "Email Support"
     ],
-    "icon": "FaRocket"
+    "icon": "https://i.ibb.co.com/pDWbQz1/social-media.png"
   },
   {
     "id": 5,
@@ -72,7 +72,7 @@
       "Dedicated Manager",
       "Custom integrations"
     ],
-    "icon": "FaBuilding"
+    "icon": "https://i.ibb.co.com/LX9h8DcY/writing-2327400-1.png"
   },
   {
     "id": 6,
@@ -87,7 +87,7 @@
       "Priority Support",
       "Advanced tools"
     ],
-    "icon": "FaStar"
+    "icon": "https://i.ibb.co.com/9kr62zRc/camera.png"
   },
   {
     "id": 7,
@@ -102,7 +102,7 @@
       "Team dashboard",
       "Shared workspace"
     ],
-    "icon": "FaUsersCog"
+    "icon": "https://i.ibb.co.com/b5CDNkyp/design-tool.png"
   },
   {
     "id": 8,
@@ -117,6 +117,6 @@
       "Dedicated Support",
       "Custom API access"
     ],
-    "icon": "FaBriefcase"
+    "icon": "https://i.ibb.co.com/pDWbQz1/social-media.png"
   }
 ]

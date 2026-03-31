@@ -1,11 +1,13 @@
 import React, { use, useState } from 'react';
 import AllProducts from './allProducts/AllProducts';
+import SelectedProducts from './selectedProducts/SelectedProducts';
 
 const Products = ({ productPromise, selectedProduct, setSelectedProduct }) => {
     const products = use(productPromise);
     // console.log(products);
 
     const [toggle, setToggle] = useState("products");
+    
     
     return (
         <div className='w-11/12 mx-auto my-10'>
@@ -26,9 +28,13 @@ const Products = ({ productPromise, selectedProduct, setSelectedProduct }) => {
                 </div>
             </div>
             <div className='my-10'>
-                <AllProducts
+                {
+                    toggle === "products" ? <AllProducts
                     selectedProduct={selectedProduct} setSelectedProduct={setSelectedProduct}
                     products={products}></AllProducts>
+                    : <SelectedProducts selectedProduct={selectedProduct} setSelectedProduct={setSelectedProduct}
+                    ></SelectedProducts>
+                }
             </div>
         </div>
     );
