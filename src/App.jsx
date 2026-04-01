@@ -7,6 +7,7 @@ import Rating from './components/ratingSection/Rating'
 import { ToastContainer } from 'react-toastify'
 import StepSection from './components/stepsSection/StepSection'
 import TransparentPricing from './components/transparentPricing/TransparentPricing'
+import Footer from './components/footerSection/Footer'
 
 const productFetch = async() =>{
   const res = await fetch('/data.json');
@@ -37,6 +38,10 @@ function App() {
         <StepSection></StepSection>
         <TransparentPricing></TransparentPricing>
       </main>
+
+      <footer>
+        <Footer></Footer>
+      </footer>
       
       <ToastContainer></ToastContainer>
       
