@@ -5,6 +5,7 @@ import Products from './components/digitalToolSection/Products'
 import Navbar from './components/navbar/Navbar'
 import Rating from './components/ratingSection/Rating'
 import { ToastContainer } from 'react-toastify'
+import StepSection from './components/stepsSection/StepSection'
 
 const productFetch = async() =>{
   const res = await fetch('/data.json');
@@ -31,6 +32,8 @@ function App() {
           selectedProduct={selectedProduct} setSelectedProduct={setSelectedProduct}
           productPromise={productPromise}></Products>
         </Suspense>
+
+        <StepSection></StepSection>
       </main>
       
       <ToastContainer></ToastContainer>

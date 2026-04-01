@@ -10,7 +10,7 @@ const Products = ({ productPromise, selectedProduct, setSelectedProduct }) => {
     
     
     return (
-        <div className='w-11/12 mx-auto my-10'>
+        <div className='w-9/12 mx-auto my-20'>
             <div className='flex flex-col justify-center items-center space-y-5'>
                 <div className='text-center'>
                     <h1 className='text-2xl md:text-4xl font-bold text-[#001931]'>Premium Digital Tools</h1>
