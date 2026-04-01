@@ -36,7 +36,7 @@ const Product = ({ product, selectedProduct, setSelectedProduct }) => {
                     </div>
                     <div className="">
                         <h2 className="text-3xl font-bold">{name}</h2>
-                        <p>{description}</p>
+                        <p className='text-[#627382]'>{description}</p>
                     </div>
                     <div>
                         <h3 className='text-xl font-semibold'>${price}/<span className='text-[16px] text-[#627382]'>{period}</span> </h3>
